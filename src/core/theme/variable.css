@@ -1,0 +1,26 @@
+:root {
+  /* 主题颜色 */
+  --primary-color: #007bff;
+
+  /* 功能色 */
+  /* 成功色 */
+  --easy-success-color: #b7eb8f;
+  /* 警告色 */
+  --easy-warning-color: #ffe58f;
+  /* 错误色 */
+  --easy-error-color: #ffccc7;
+  /* info色 */
+  --easy-info-color: #91caff;
+
+  /* 字体颜色 */
+  --easy-font-color: rgba(0, 0, 0, 0.78);
+
+  /* border-radius */
+  --easy-border-radius: 4px;
+
+  /* padding */
+  --easy-padding: 8px 12px;
+
+  /* 基础字体大小 */
+  --easy-font-size: 14px;
+}

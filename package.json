@@ -1,0 +1,46 @@
+{
+  "name": "sf-element",
+  "private": false,
+  "version": "0.0.3",
+  "type": "module",
+  "main": "./dist/sf-element.cjs",
+  "module": "./dist/sf-element.js",
+  "unpkg": "/dist/sf-element.iife.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "component ui"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "@vitejs/plugin-react": "^4.1.0",
+    "jsdom": "^22.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.4",
+    "vitest": "^0.34.5"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.11.2",
+    "@react-spring/web": "^9.7.3",
+    "antd": "^5.13.1",
+    "classnames": "^2.3.2",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
