@@ -32,7 +32,7 @@ describe('Tree component', () => {
     expect(screen.getByText('Node 2')).toBeInTheDocument()
   })
 
-  test('expands and collapses the tree', () => {
+  it('expands and collapses the tree', () => {
     render(<Tree data={mockData} />)
 
     // 点击展开按钮

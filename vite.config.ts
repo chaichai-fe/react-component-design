@@ -11,8 +11,8 @@ export default defineConfig({
     react(),
     dts({
       outDir: ['dist/types'], // 输出目录
-      include: 'src/core', // 需要编译的文件
-      exclude: ['src/core/**/__test__', 'src/core/**/style.ts'], // 排除编译的文件
+      include: 'src/package', // 需要编译的文件
+      exclude: ['src/package/**/__test__', 'src/package/**/style.ts'], // 排除编译的文件
     }),
   ],
   test: {
@@ -21,14 +21,20 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/core/index.ts'),
-      name: 'SFElement',
-      fileName: 'sf-element',
-      formats: ['es', 'cjs', 'iife'],
+      entry: resolve(__dirname, 'src/package/index.ts'),
+      name: 'AntDMiniUI',
+      fileName: 'antd-mini-ui',
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['react', 'react-dom'],
+      output: {
+        // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDom',
+        },
+      },
     },
   },
 })
